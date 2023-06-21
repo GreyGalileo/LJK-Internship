@@ -15,7 +15,7 @@ fn lagragnge_graph_exp_0to10() {
   let xn: Vec<f64> = vec![0.0, 2.0, 4.0, 6.0, 8.0, 10.0];
   let fxn: Vec<f64> = xn.iter().map(|x: &f64| x.exp() ).collect();
 
-  let xtche: Vec<f64> = tchebychev::roots_interval(5, 0.0, 10.0);
+  let xtche: Vec<f64> = tchebychev::roots_interval(6, 0.0, 10.0);
   let fxtche: Vec<f64> = xtche.iter().map(|x: &f64| x.exp() ).collect();
 
   let approx_exp =  make_lagrange_function(&xn , &fxn);
